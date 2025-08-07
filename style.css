@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Comic Sans MS', cursive;
+  background: linear-gradient(to right, #ffc0cb, #ffb6c1);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  text-align: center;
+}
+
+.heart {
+  font-size: 120px;
+  animation: beat 1s infinite;
+}
+
+.message {
+  font-size: 24px;
+  color: #c2185b;
+  margin-top: 20px;
+}
+
+/* Animasi denyut jantung */
+@keyframes beat {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}
